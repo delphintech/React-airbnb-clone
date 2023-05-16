@@ -1,1 +1,11 @@
-
+.navbar {
+  width: 100vw;
+  height: 10vh;
+  box-shadow: 0px 1px 2px #80808047;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  img {
+    height: 10px;
+  }
+}

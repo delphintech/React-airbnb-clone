@@ -2,7 +2,6 @@ function Pics() {
 
   return (
     <>
-    <h2> Hi, from Pics component</h2>
     </>
   )
 }

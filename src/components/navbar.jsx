@@ -1,9 +1,9 @@
 function Navbar() {
 
   return (
-    <>
-    <h2> Hi, from Navbar component</h2>
-    </>
+    <nav className="navbar">
+      <img src="src/assets/logo-airbnb.png" alt="logo airbnb" />
+    </nav>
   )
 }
 

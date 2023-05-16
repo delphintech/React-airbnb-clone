@@ -2,7 +2,6 @@ function Card() {
 
   return (
     <>
-    <h2> Hi, from Card component</h2>
     </>
   )
 }
