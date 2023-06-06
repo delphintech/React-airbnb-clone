@@ -1,3 +1,11 @@
+body {
+  margin: 0px;
+}
+
+#root {
+  border-radius: 5px;
+}
+
 .navbar {
   width: 100vw;
   height: 10vh;
@@ -6,6 +14,32 @@
   align-items: center;
   padding-left: 10px;
   img {
-    height: 10px;
+    height: 20px;
+  }
+}
+
+.grid-pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  img {
+    width: 80%;
+  }
+}
+
+.resume {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-family: "poppins";
+  h2 {
+    font-size: 25px;
+    font-weight: 600;
+    margin-top: 0rem;
+  }
+  p {
+    font-size: 13px;
+    font-weight: 300;
+    width: 70%;
   }
 }
