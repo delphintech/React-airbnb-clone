@@ -1,3 +1,4 @@
+
 import Navbar from "./components/navbar"
 import Text from "./components/text"
 import Pics from "./components/pics"
