@@ -5,6 +5,9 @@ body {
 
 #root {
   border-radius: 5px;
+}
+
+.content {
   padding: 20px;
 }
 
@@ -15,6 +18,8 @@ body {
   display: flex;
   align-items: center;
   padding-left: 10px;
+  position: sticky;
+  top: 0px;
   img {
     height: 30%;
   }
