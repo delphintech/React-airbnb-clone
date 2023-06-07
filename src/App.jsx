@@ -12,7 +12,15 @@ function App() {
       <div className="content">
         <Pics />
         <Text />
-        <Card />
+        <Card
+          img="image_12"
+          status="sold out"
+          rating={5.0}
+          reviewCount={6}
+          country="USA"
+          title="Life lesson with Katy Zafares"
+          price={136}
+        />
       </div>
     </>
   )

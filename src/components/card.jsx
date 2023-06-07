@@ -1,16 +1,16 @@
-function Card() {
+function Card({img, status, rating, reviewCount, country, title, price}) {
 
   return (
     <div className="card">
-      <img src="src/assets/image 12.png" alt="card photo" className="card-img" />
-      <span className="status">SOLD OUT</span>
+      <img src={`src/assets/${img}.png`} alt="card photo" className="card-img" />
+      <span className="status">{status.toUpperCase()}</span>
       <div className="card-text">
         <span>
           <img src="src/assets/star.png" alt="star" className="star" />
-          5.0 <span className="grey">(6) · USA</span>
+          {rating} <span className="grey">({reviewCount}) · {country}</span>
         </span>
-        <span>Life lessons with Katie Zaferes</span>
-        <span><strong>From $136</strong> / person</span>
+        <span>{title}</span>
+        <span><strong>From {price}$</strong> / person</span>
       </div>
     </div>
   )
