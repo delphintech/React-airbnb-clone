@@ -54,6 +54,7 @@ body {
   height: 40vh;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
 
   .card-text {
     display: flex;
@@ -83,4 +84,10 @@ body {
 
 .grey {
   color:rgb(123, 123, 122);
+}
+
+.cards {
+  display: flex;
+  gap: 5px;
+  overflow: scroll;
 }

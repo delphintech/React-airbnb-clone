@@ -3,8 +3,20 @@ import Navbar from "./components/navbar"
 import Text from "./components/text"
 import Pics from "./components/pics"
 import Card from "./components/card"
+import data from "./data"
 
 function App() {
+  const cards = data.map((lesson) =>
+    <Card
+      img={lesson.coverImg}
+      status="sold out"
+      rating={lesson.stats.rating}
+      reviewCount={lesson.stats.reviewCount}
+      country={lesson.location}
+      title={lesson.title}
+      price={lesson.price}
+    />
+  )
 
   return (
     <>
@@ -12,15 +24,7 @@ function App() {
       <div className="content">
         <Pics />
         <Text />
-        <Card
-          img="image_12"
-          status="sold out"
-          rating={5.0}
-          reviewCount={6}
-          country="USA"
-          title="Life lesson with Katy Zafares"
-          price={136}
-        />
+        <div className="cards">{cards}</div>
       </div>
     </>
   )
