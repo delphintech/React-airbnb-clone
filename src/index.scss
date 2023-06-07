@@ -56,6 +56,7 @@ body {
   display: flex;
   flex-direction: column;
   flex: 0 0 auto;
+  position: relative;
 
   .card-text {
     display: flex;
