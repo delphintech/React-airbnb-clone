@@ -1,6 +1,7 @@
 body {
   margin: 0px;
   font-family: poppins;
+  overflow: auto;
 }
 
 #root {
@@ -54,7 +55,7 @@ body {
   height: 40vh;
   display: flex;
   flex-direction: column;
-  overflow: scroll;
+  flex: 0 0 auto;
 
   .card-text {
     display: flex;
@@ -88,6 +89,7 @@ body {
 
 .cards {
   display: flex;
-  gap: 5px;
-  overflow: scroll;
+  flex-wrap: nowrap;
+  gap: 20px;
+  overflow-x: auto;
 }

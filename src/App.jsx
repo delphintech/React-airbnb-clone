@@ -15,6 +15,7 @@ function App() {
       country={lesson.location}
       title={lesson.title}
       price={lesson.price}
+      key={lesson.id}
     />
   )
 
@@ -24,7 +25,7 @@ function App() {
       <div className="content">
         <Pics />
         <Text />
-        <div className="cards">{cards}</div>
+        <section className="cards">{cards}</section>
       </div>
     </>
   )
