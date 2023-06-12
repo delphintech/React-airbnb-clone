@@ -8,15 +8,8 @@ import data from "./data"
 function App() {
   const cards = data.map((lesson) =>
     <Card
-      img={lesson.coverImg}
-      status="sold out"
-      rating={lesson.stats.rating}
-      reviewCount={lesson.stats.reviewCount}
-      country={lesson.location}
-      title={lesson.title}
-      price={lesson.price}
       key={lesson.id}
-      openSpots={lesson.openSpots}
+      details={lesson}
     />
   )
 
