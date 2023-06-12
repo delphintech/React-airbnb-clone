@@ -1,9 +1,15 @@
-function Card({img, status, rating, reviewCount, country, title, price}) {
+function Card({img, openSpots, rating, reviewCount, country, title, price}) {
+  let badge
+  if (openSpots === 0) {
+    badge = "SOLD OUT"
+  } else if (country === "Online") {
+    badge = "ONLINE"
+  }
 
   return (
     <div className="card">
       <img src={`src/assets/${img}`} alt="card photo" className="card-img" />
-      <span className="status">{status.toUpperCase()}</span>
+      {badge && <span className="status">{badge}</span>}
       <div className="card-text">
         <span>
           <img src="src/assets/star.png" alt="star" className="star" />

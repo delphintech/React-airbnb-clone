@@ -16,6 +16,7 @@ function App() {
       title={lesson.title}
       price={lesson.price}
       key={lesson.id}
+      openSpots={lesson.openSpots}
     />
   )
 
